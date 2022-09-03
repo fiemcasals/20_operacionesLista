@@ -12,7 +12,7 @@
 
         eliminarElemento(lista,5);
 
-        modificaElemento(lista,5,8);
+        modificaElemento(lista,6,8);
 
         imprimir(lista);
 

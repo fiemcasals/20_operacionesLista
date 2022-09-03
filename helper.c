@@ -100,3 +100,17 @@ void imprimirReves(lista * lista) {
     }
 }
 
+void modificaElemento(lista * lista, int numeroModificar, int numeroNuevo) {
+
+    nodo * aux= lista->pri;
+
+    for(;aux->sig!=NULL && aux->cod!=numeroModificar; aux=aux->sig){}
+
+    if(aux->cod==numeroModificar) {
+        aux->cod=numeroNuevo;
+    }else{
+        printf("el numero a modificar, no se encuentra en la lista\n");
+    }
+
+}
+
