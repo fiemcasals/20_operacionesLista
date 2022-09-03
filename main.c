@@ -18,5 +18,9 @@
 
         imprimirReves(lista);
 
+        ordenarLista(lista);
+
+        imprimir(lista);
+
         return 0;
     }

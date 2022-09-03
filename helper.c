@@ -114,3 +114,27 @@ void modificaElemento(lista * lista, int numeroModificar, int numeroNuevo) {
 
 }
 
+void ordenarLista(lista * lista) {
+
+    //metodo burbuja
+
+    nodo * aux=lista->pri;
+    nodo * aux2=aux;
+    if(aux==NULL){
+        printf("la lista, esta vacia\n");
+        return;
+    }
+    int NN;
+    for(;aux2->sig!=NULL;aux2=aux2->sig) {
+        aux=lista->pri;
+        for(;aux->sig!=NULL;aux=aux->sig){
+            if(aux->cod>aux->sig->cod){
+                NN=aux->sig->cod;
+                aux->sig->cod=aux->cod;
+                aux->cod=NN;
+            }}
+    }
+
+    }
+
+

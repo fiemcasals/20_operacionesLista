@@ -34,4 +34,6 @@ void imprimirReves(lista*);
 void eliminarElemento(lista*,int);
 
 void modificaElemento(lista*,int,int);
+
+void ordenarLista(lista*);
 #endif //INC_20_OPERACIONESLISTA_HELPER_H
